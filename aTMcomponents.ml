@@ -57,7 +57,7 @@ let rec acquire_amount () : int =
     amount
   with
   | Failure _ -> printf "Invalid amount \n";
-                 acquire_amount 
+                 acquire_amount ()
 ;;
 
 (* acquire_act () -- Requests from the user and returns an action to
