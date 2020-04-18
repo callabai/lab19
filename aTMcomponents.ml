@@ -61,7 +61,7 @@ let rec acquire_amount () : int =
 
 (* acquire_act () -- Requests from the user and returns an action to
    be performed, as a value of type action *)
-let acquire_act () : action =
+let rec acquire_act () : action =
   printf "Enter action: (B) Balance (-) Withdraw (+) Deposit \ 
            (=) Done (X) Exit: %!";
   scanf " %c"
